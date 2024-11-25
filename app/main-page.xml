@@ -1,0 +1,23 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd"
+      navigatingTo="onPageLoaded">
+    <ActionBar title="Inventory Management" />
+    <GridLayout rows="auto, auto, *" padding="10" verticalAlignment="top">
+
+        <TextField hint="Enter product name"
+                   text="{{ newProductName }}" 
+                   row="0" />
+
+
+        <Button text="Add Product"
+                tap="onAddProductTap" 
+                row="1" />
+
+        <ListView items="{{ products }}" row="2">
+            <ListView.itemTemplate>
+                <StackLayout padding="10">
+                    <Label text="{{ name }}" />
+                </StackLayout>
+            </ListView.itemTemplate>
+        </ListView>
+    </GridLayout>
+</Page>

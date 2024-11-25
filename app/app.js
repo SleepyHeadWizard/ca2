@@ -1,0 +1,1 @@
+const { Application, ObservableArray, Observable } = require("@nativescript/core");

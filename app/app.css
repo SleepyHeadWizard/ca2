@@ -1,0 +1,7 @@
+﻿@import '@nativescript/theme/css/core.css';
+@import '@nativescript/theme/css/default.css';
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('~/fonts/fa-solid-900.ttf');
+}
